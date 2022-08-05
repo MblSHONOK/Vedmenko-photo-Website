@@ -1,0 +1,207 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Montserrat_Thin';
+    src: local('meta-normal'), local('meta-normal'),
+    url('fonts/MontserratThin.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+body {
+    font-family: Montserrat_Thin;
+    background-color: white;
+}
+
+
+.container {
+    width: 1920px;
+    height: 930px;
+    padding: 40px 60px 60px 60px;
+    outline: 3px solid white;
+    outline-offset: -3px;
+    background: url(/static/img/IMG_8431.jpg) no-repeat;
+    background-size: 100%;
+    -moz-background-size: 100%;
+    -webkit-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    zoom:100%;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+}
+
+.site-name {
+    color: white;
+    text-align: right;
+    font-size: 14pt;
+}
+
+.site-name-2 {
+    height: 50px;
+    width: 1000px;
+    position: absolute;
+    color: black;
+    text-align: right;
+    font-size: 14pt;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.home-title-block {
+    margin-top: 18%;
+    float: right;
+}
+
+.home-title-name {
+    color: white;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    font-size: 36pt;
+}
+
+.home-title-act {
+    color: white;
+    text-align: right;
+    font-size: 25pt;
+    margin-top: -5%;
+}
+
+.menu {
+    position: absolute;
+    margin-top: 24.5%;
+    left: 81.75%;
+}
+
+.tp{
+    font-size: 20px;
+    display: inline;
+    padding-right: 0px;
+    padding-left: 20px;
+}
+
+.lin{
+    user-select: none;
+    text-decoration: none;
+    color: #fff;
+}
+a.lin:hover {border-bottom: 1px double white;}
+
+.social-links {
+    position: absolute;
+    display: inline;
+    top: 91%;
+    left: 93%;
+}
+
+.social-links-2 {
+    height: 50px;
+    position: absolute;
+    display: inline;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-pics {
+    height: 35px;
+    width: 35px;
+    margin: 1px;
+}
+
+.social-link-button {
+    opacity: 1;
+}
+
+.social-link-button:hover {
+    opacity: 0.5;
+    transition: opacity 0.25s;
+}
+
+.portfolio-container {
+    max-width: 1000px;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+}
+
+.logo-title {
+    width: 100%;
+    height: 100px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40pt;
+}
+
+.lin-2 {
+    text-decoration: none;
+    color: black;
+}
+
+.logo-subtitle {
+    width: 100%;
+    height: 50px;
+    font-size: 20pt;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -2%;
+}
+
+.menu-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.tp-2{
+    font-size: 20px;
+    display: inline;
+    padding-right: 70px;
+    padding-left: 70px;
+}
+
+.poloska {
+    width: 1000px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.genres {
+    height: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.photo-block {
+    width: 100%;
+    height: 1200px;
+}
+
+.portfolio-bottom {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 40px;
+}

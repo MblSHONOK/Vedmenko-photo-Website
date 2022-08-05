@@ -1,0 +1,43 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block title %}
+Portfolio
+{% endblock %}
+{% block content %}
+    <div class="portfolio-container">
+        <div class="logo-title">
+            <a class="lin-2" href="{% url 'index' %}">Ilia Vedmenko</a>
+        </div>
+        <div class="logo-subtitle">
+            Photography
+        </div>
+        <div>
+            <nav class="menu-2">
+                <ul>
+                    <li class="tp-2"><a class="lin-2" href="{% url 'index' %}">Home</a></li>
+                    <li class="tp-2"><a class="lin-2" href="{% url 'portfolio' %}">Portfolio</a></li>
+                    <li class="tp-2"><a class="lin-2" href="{% url 'about' %}">About</a></li>
+                    <li class="tp-2"><a class="lin-2" href="{% url 'contact' %}">Contact</a></li>
+                </ul>
+            </nav>
+            <hr class="poloska">
+            <div class="genres">
+                chto-to
+            </div>
+            <hr class="poloska">
+        </div>
+        <div class="photo-block">
+            FOTOCHKI
+        </div>
+        <hr class="poloska">
+        <div class="portfolio-bottom">
+            <div class="social-links-2">
+                <a class="social-link-button" href="https://t.me/iliamblshonok"><img class="social-pics" src="{% static 'img/telegram-logo-black.png' %}" alt="Telegram"></a>
+                <a class="social-link-button" href="https://vk.com/ilia.vedmenko"><img class="social-pics" src="{% static 'img/vk-logo-black.png' %}" alt="VK"></a>
+            </div>
+            <div class="site-name-2">
+                vedmenko-photo.ru
+            </div>
+        </div>
+    </div>
+{% endblock %}

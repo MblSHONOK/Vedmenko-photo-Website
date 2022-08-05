@@ -1,0 +1,33 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block title %}
+Vedmenko Photo
+{% endblock %}
+{% block content %}
+    <div class="container">
+        <div class="site-name">
+            vedmenko-photo.ru
+        </div>
+        <div class="home-title-block">
+            <div class="home-title-name">
+                Ilia Vedmenko
+            </div>
+            <div class="home-title-act">
+                Photography
+            </div>
+        </div>
+        <div>
+            <nav class="menu">
+                <ul>
+                    <li class="tp"><a class="lin" href="{% url 'portfolio' %}">Portfolio</a></li>
+                    <li class="tp"><a class="lin" href="{% url 'about' %}">About</a></li>
+                    <li class="tp"><a class="lin" href="{% url 'contact' %}">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="social-links">
+            <a class="social-link-button" href="https://t.me/iliamblshonok"><img class="social-pics" src="{% static 'img/telegram-logo.png' %}" alt="Telegram"></a>
+            <a class="social-link-button" href="https://vk.com/ilia.vedmenko"><img class="social-pics" src="{% static 'img/vk-logo.png' %}" alt="VK"></a>
+        </div>
+    </div>
+{% endblock %}
