@@ -20,7 +20,7 @@ Website for best project of films.
 
 ## Preview :desktop_computer:
 
-![Vedmenko]()
+![Vedmenko](https://github.com/MblSHONOK/Vedmenko-photo-Website/blob/ob-2/taskmanager/static/img/preview.jpg?raw=true)
 
 ## Installation :gear:
 
