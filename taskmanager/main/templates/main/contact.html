@@ -11,7 +11,7 @@ Contact
         <div class="logo-subtitle">
             Photography
         </div>
-        <div>
+        <div class="menu2-block">
             <nav class="menu-2">
                 <ul>
                     <li class="tp-2"><a class="lin-2" href="{% url 'index' %}">Home</a></li>
@@ -20,11 +20,68 @@ Contact
                     <li class="tp-2"><a class="lin-2" href="{% url 'contact' %}">Contact</a></li>
                 </ul>
             </nav>
-            <hr class="poloska">
-        <div class="contact-block">
-            CONTACTI
         </div>
-        <hr class="poloska">
+        <hr class="poloska1">
+        <div class="contact-blocks">
+            <div class="contact-photo-block">
+                <img class="contact-photo" src="{% static 'img/contact-photo.jpg' %}">
+            </div>
+            <div class="contact-text-block">
+                <h3 class="contact-text-title">Contact Me</h3>
+                <p>Have a question?</p>
+                <p>Thinking about booking a private session?</p>
+                <p>Please do not hesitate to reach out for any reason - email, call, text, or just fill out the form below and hit "submit".</p>
+                <p>email: mblshonokcs@gmail.com</p>
+            </div>
+            <div class="form-block">
+                <form method="post">
+                    {% csrf_token %}
+                    <fieldset class="form-item">
+                        <legeng class="title">Name</legend></br>
+                        <label class="caption">
+                            <div class="field-name">
+                                <input class="first-name" type="text" name="name" required>
+                                <span class="caption-text">First Name</span>
+                            </div>
+                        </label>
+                        <label class="caption">
+                            <div class="field-name">
+                                <input class="last-name" type="text" name="lastname" required>
+                                <span class="caption-text">Last Name</span>
+                            </div>
+                        </label>
+                    </fieldset>
+                    <fieldset class="form-item">
+                        <label class="caption">
+                            <legeng class="title">Email Address</legend>
+                            <div class="field">
+                                <input class="email" type="text" name="sender" required>
+                            </div>
+                        </label>
+                    </fieldset>
+                    <fieldset class="form-item">
+                        <label class="caption">
+                            <legeng class="title">Subject</legend>
+                            <div class="field">
+                                <input class="subject" type="text" name="subject" required>
+                            </div>
+                        </label>
+                    </fieldset>
+                    <fieldset class="form-item">
+                        <label class="caption">
+                            <legend class="title">Message</legend>
+                            <div class="field">
+                                <textarea class="message" type="text" name="message" required></textarea>
+                            </div>
+                        </label>
+                    </fieldset>
+                    <div class="submit-button">
+                        <input class="button" type="submit" value="SUBMIT">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <hr class="poloska3">
         <div class="portfolio-bottom">
             <div class="social-links-2">
                 <a class="social-link-button" href="https://t.me/iliamblshonok"><img class="social-pics" src="{% static 'img/telegram-logo-black.png' %}" alt="Telegram"></a>

@@ -1,7 +1,7 @@
 {% extends 'main/base.html' %}
 {% load static %}
 {% block title %}
-About
+Genre Phothoraphy
 {% endblock %}
 {% block content %}
     <div class="portfolio-container">
@@ -22,23 +22,26 @@ About
             </nav>
         </div>
         <hr class="poloska1">
-        <div class="about-blocks">
-            <div class="about-text">
-                <h3 class="about-text-title">About Me</h3></br>
-                <p>My work is an obsession, so every day and every shoot is an opportunity to learn and to further develop my craft - discovering more about myself, and about those around.</p></br>
-                <p>I shoot digital, but I can give any kind of image, including film. Of course, this cannot be compared with analog shooting, but I try to convey the surroundings of the picture as much as possible through digital processing.</p></br>
-                <p>I am available for private portrait sessions, as well as events in the Pavlovsky Posad and Moscow region areas - though I would also be very interested in working on location elsewhere.</p></br>
-                <p>I'd love to hear from you, so feel free to contact me.</p></br>
-                <p>Thank you for taking time to look at my site and work; I hope to meet you in the near future.</p>
-            </div>
-            <div class="signature">
-                </br>
-                <p>- Ilia Vedmenko</p>
-                </br>
-            </div>
-            <div class="about-img">
-                <img class="avatar" src="{% static 'img/ava.jpg' %}">
-            </div>
+        <div class="genres">
+            <table>
+                <tr>
+                    <th class="cell"><a class="genre-links" href="{% url 'portrait-photography' %}">Portraits</a></th>
+                    <th class="cell"><a class="genre-links" href="{% url 'report-photography' %}">Reports</a></th>
+                    <th class="cell"><a class="genre-links" href="{% url 'genre-photography' %}">Genre</a></th>
+                    <th class="cell"><a class="genre-links" href="{% url 'street-photography' %}">Street</a></th>
+                    <th class="cell"><a class="genre-links" href="{% url 'bw-photography' %}">B & W</a></th>
+                </tr>
+            </table>
+        </div>
+        <hr class="poloska2">
+        <div class="photo-blocks">
+            <img class="block-img-horizontal" src="{% static 'img/genre/IMG_6394.jpg' %}">
+            <img class="block-img-vertical" src="{% static 'img/genre/IMG_6388.jpg' %}">
+            <img class="block-img-vertical" src="{% static 'img/genre/IMG_6399.jpg' %}">
+            <img class="block-img-horizontal" src="{% static 'img/genre/IMG_7013.jpg' %}">
+            <img class="block-img-horizontal" src="{% static 'img/genre/IMG_7026.jpg' %}">
+            <img class="block-img-horizontal" src="{% static 'img/genre/IMG_7039.jpg' %}">
+            
         </div>
         <hr class="poloska3">
         <div class="portfolio-bottom">

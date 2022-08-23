@@ -7,8 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}{% endblock %}</title>
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="shortcut icon" href="{% static 'img/favicon.png' %}" type="image/png">
+    <script src="{% static 'js/loader.js' %}"></script>
 </head>
 <body>
+    <div class="loader">
+        <div class="loader_inner"></div>
+    </div>
     {% block content %}
     {% endblock %}
 </body>
